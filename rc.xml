@@ -301,6 +301,44 @@
       </action>
     </keybind>
     <!-- Keybindings for window switching with the arrow keys -->
+          
+          
+    <!-- left side -->
+    <keybind key="W-Left">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <width>50%</width>
+        <height>100%</height>
+      </action>
+    </keybind>
+    <!-- right side -->
+    <keybind key="W-Right">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>50%</x>
+        <y>0</y>
+        <width>50%</width>
+        <height>100%</height>
+      </action>
+    </keybind>
+    <!-- maximize -->
+    <keybind key="W-Up">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <width>100%</width>
+        <height>100%</height>
+      </action>
+    </keybind>
+    <!-- minimize -->
+    <keybind key="W-Down">
+      <action name="Iconify">
+      </action>
+    </keybind>
+          
     <keybind key="W-S-Right">
       <action name="DirectionalCycleWindows">
         <direction>right</direction>
@@ -331,7 +369,8 @@
         <command>kfmclient openProfile filemanagement</command>
       </action>
     </keybind>
-        <!-- Open gmrun -->
+    
+    <!-- Open gmrun -->
     <keybind key="A-r">
       <action name="Execute">
         <command>gmrun</command>
